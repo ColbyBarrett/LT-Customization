@@ -552,8 +552,8 @@ a.toggle-menu{
       
 
 
-      <div class="table-col">	
-      <table class="sticky-table">
+      <div class="table-col" style="overflow-x: auto;">	
+      <table id="2B-Sticky" class="non-sticky">
         <thead>
             <tr>
                 <td class="hide no-border" style="width: 25%;background: transparent;"></td>
@@ -1983,19 +1983,6 @@ if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_c
             }
             position = scroll;
         });
-// stickyElem = document.querySelector(".sticky-thead"); 
-//     console.log(stickyElem);
-//     currentPos = stickyElem.getBoundingClientRect().top + window.pageYOffset;
-//     jQuery(window).scroll(function () {
-//         if(window.pageYOffset > currentPos) {
-//             stickyElem.style.position = "fixed";
-//             stickyElem.style.top = "500px";
-//         }
-//         else {
-//             stickyElem.style.position = "relative";
-//             stickyElem.style.top = "initial";
-//     }
-//     });
 
         animateButton_site();
         jQuery(".testimonial-box .toggle-read-more").each(function (index) {
@@ -2393,34 +2380,54 @@ if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_c
       "><iframe id="cf_88042cf1181835caef036b5e7c5f7e2e1a3e9c5f" style="height: 95px; width: 95px; display: block; position: fixed; right: 0px; bottom: 0px; background-color: transparent; z-index: 1000; border: none; max-height: 700px; max-width: 390px; color-scheme: none; min-height: 0px;" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto" src="./View Our Pricing Plans _ LinkTrust_files/saved_resource.html"></iframe></div><div id="hubspot-messages-iframe-container" class="widget-align-right" style="min-height: 96px; min-width: 100px; width: 276px; height: 214px;"><div class="hs-shadow-container"></div><iframe src="./View Our Pricing Plans _ LinkTrust_files/fcec4511d1b843548aa7aff45b331e8a.html" id="hubspot-conversations-iframe" role="region" aria-label="Chat Widget" allowfullscreen="" data-test-id="chat-widget-iframe"></iframe></div></body></html>
 
 <script>
-    /*
-    stickyElem = document.querySelector(".sticky-table"); 
-    console.log(stickyElem);
+    
+   stickyElem = document.getElementById("2B-Sticky"); 
+    <!-- stickyElem = document.querySelector(".sticky-table");-->
     currentPos = stickyElem.getBoundingClientRect().top + window.pageYOffset;
     window.addEventListener("scroll", (event) => {
         if(window.pageYOffset > currentPos) {
-            stickyElem.style.position = "fixed";
-            stickyElem.style.top = "100px";
-            stickyElem.style.left = "50px";
+            // stickyElem.style.position = "fixed";
+            // stickyElem.style.top = "100px";
+            // stickyElem.style.width = "74vw";
+            // stickyElem.style.marginLeft = "53px";
+            // stickyElem.style.cellpadding = "0";
+            // stickyElem.style.z = "1";
+            stickyElem.classList.add("sticky-table");
+            stickyElem.classList.remove("non-sticky");
         }
         else {
-            stickyElem.style.position = "relative";
-            stickyElem.style.top = "initial";
-            stickyElem.style.left = "initial";
+            // stickyElem.style.position = "relative";
+            // stickyElem.style.top = "initial";
+            // stickyElem.style.width = "94%";
+            // stickyElem.style.marginRight = "80px";
+            stickyElem.classList.add("non-sticky");
+            stickyElem.classList.remove("sticky-table");
     }
     });
-    */
 </script>
+
+// <script>    
+//     var screenWidth = window.innerWidth;
+//     stickyElem = document.getElementById("2B-Sticky");
+//     window.addEventListener("resize", (event) => {
+//         screenWidth = window.innerWidth;
+//         var marginOffset = screenWidth / 65;
+//         stickyElem.style.marginLeft = 
+
+//     })
+
+//     console.log(screenWidth);    
+// </script>
 <style>
 table#services tbody td:first-child,  table.sticky-table tbody td:first-child{
     width: 25%;
-}  
+} 
 
-.sticky-table{
+/*.sticky-table{
     position: fixed;
     top: 100px;
-    /* padding-right: 260px; */
+    /* padding-right: 260px; 
     width: 77%;
     z-index: 1;
-}
+}*/
 </style>

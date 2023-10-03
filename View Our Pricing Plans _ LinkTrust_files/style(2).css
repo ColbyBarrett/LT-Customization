@@ -4697,6 +4697,83 @@ span.price {
     border-bottom: 1px solid #00adef;
     border-radius: 25px;
 }
+/* .non-sticky {
+	margin: auto;
+	border-collapse: collapse;
+	overflow-x: auto;
+	/* display: block; */
+	/* width: 94%; */
+    /* border-width: 2px; */
+	/* max-width: 100%; */
+	/* overflow-y:hidden; */
+	/* max-width: 1000px; */
+    /* position: fixed;
+    top: 100px;
+    width: 74vw; 
+    margin-left: 53px;
+    z-index: 3; 
+}*/
+
+.sticky-table {
+    text-align: center;
+}
+
+.sticky-table {
+    position: fixed;
+    top: 100px;
+    width: 74vw; 
+    margin-left: 2.9vw;
+    z-index: 3;
+    border: 1px solid var(--light-grey);
+}
+
+
+.non-sticky {
+    margin-bottom: auto;
+    position: relative;
+    top: initial;
+    width: 74vw;
+    margin-left: 2.9vw;
+    text-align: center;
+    padding: 50%;
+    border: 1px solid var(--light-grey);
+}
+
+.non-sticky
+
+/* @media screen {
+    .sticky-table {
+        width:94%
+    }
+} */
+
+table#services tbody td:first-child,  table.sticky-table tbody td:first-child{
+    width: 25%;
+} 
+
+.sticky-table a.am-button-1 {
+    background-color: var(--dark-grey);
+    color: #ffffff !important;
+    text-decoration: none !important;
+    display: inline-block;
+    margin: 18px 0px;
+    padding: 12px 41px;
+    border: none;
+    font-size: 15px;
+	border-radius: 25px;
+}
+
+.non-sticky a.am-button-1 {
+    background-color: var(--dark-grey);
+    color: #ffffff !important;
+    text-decoration: none !important;
+    display: inline-block;
+    margin: 18px 0px;
+    padding: 12px 41px;
+    border: none;
+    font-size: 15px;
+	border-radius: 25px;
+}
 #services {
 	margin: auto;
 	border-collapse: collapse;
@@ -4741,6 +4818,17 @@ span.price {
     background: var(--light-grey)!important;
     border-left: var(--light-grey);
 }
+
+.sticky-table .table-subtitle {
+    background: var(--light-grey)!important;
+    border-left: var(--light-grey);
+}
+
+.non-sticky .table-subtitle {
+        background: var(--light-grey)!important;
+    border-left: var(--light-grey);
+}
+
 #services r:nth-child(even) {
     background: #fafafa!important;
 }
