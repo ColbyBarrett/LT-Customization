@@ -4719,6 +4719,7 @@ span.price {
 }
 
 .sticky-table {
+    overflow-x: auto;
     position: fixed;
     top: 100px;
     width: 74vw; 
@@ -4729,6 +4730,7 @@ span.price {
 
 
 .non-sticky {
+    overflow-x: auto;
     margin-bottom: auto;
     position: relative;
     top: initial;
