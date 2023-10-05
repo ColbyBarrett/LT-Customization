@@ -1107,6 +1107,10 @@ footer-section p {
     text-align: left;
 }
 
+#services h3 {
+    text-align: left;
+}
+
 .center,
 .center p,
 .center h6,
@@ -1114,9 +1118,6 @@ footer-section p {
     text-align: center;
 }
 
-.center h3 {
-    text-align: left;
-}
 
 .center p {
     margin: auto;
@@ -1160,6 +1161,220 @@ div {
     position: relative;
     text-align: left;
     margin: auto;
+}
+
+.card {
+    border-width: 0;
+    border-radius: 20rem;
+}
+
+.card .top-header {
+    border-radius: 1rem;
+}
+
+.row .starter {
+    background: #EFF6FE;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    padding: 1rem 1rem;
+    padding-bottom: .5rem;
+    width: 22vw;
+}
+
+.row .scale {
+    background: #111627;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    padding: 1rem 1rem;
+    padding-bottom: .5rem;
+    width: 22vw;
+}
+
+.card .scale-header {
+    background: #111627;
+}
+
+.card-header{
+    display: flex;
+    padding: 12px 0px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    background: #EFF6FE;
+    border-bottom: 1px solid #DAE1EA !important;
+    border-width: 0;
+}
+  .card-header div {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .card-header .h5 {
+    padding: 0;
+    padding-left: .5rem;
+    color: #000;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 100% */
+  }
+
+  .card-header .scale {
+    color: #FFF;
+  }
+
+  .container .row {
+    padding: 1rem;
+  }
+
+  .row .card {
+    margin: 1rem;
+  }
+
+  .card-header .start-price {
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: .2rem;
+    color: #000;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 100% */
+  }
+
+
+   .card-header #leadstart {
+    font-size: 24px;
+    padding-left: 0;
+  } 
+
+  .card-header #leadscale {
+    font-size: 24px;
+    padding-left: 0;
+    color: #FFF;
+  } 
+
+  .card-header #scaleprice{
+    color:#FFF;
+  }
+
+  .card-body .white li {
+    color: #FFF;
+  }
+
+  .btn-primary {
+    background-color: #111627;
+    border:none;
+  }
+
+  .btn-secondary {
+    background-color: #FFF;
+    color: #000 !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .card #Popular {
+    color: #FFF;
+    text-align: center;
+    display: flex;
+    height: 28px;
+    padding: 0px 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px; /* 316.667% */
+  }
+
+  .card-header #addlead {
+    margin-bottom: 0;
+    padding:0;
+    padding-left:.5rem;
+    padding-top: .2rem;
+    color: #000;
+    text-align: left;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 100% */
+  }
+
+  .card-header #scaleaddlead {
+    color: #FFF;
+  }
+.card-body {
+    display: flex;
+    padding-bottom: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+}
+
+div #bill {
+    color: #000;
+    text-align: left;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px; /* 109.091% */
+}
+
+div #scalebill {
+    color: #FFF;
+    text-align: left;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px; /* 109.091% */
+}
+
+.button-body {
+    border-top:  1px solid #DAE1EA !important;
+}
+
+.card-body ul li {
+    padding: .1rem;
+    color: #000;
+    text-align: left;
+    font-size: 16px;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
+.card-body ul {
+    padding-left: .5rem;
+}
+
+.btn-sm{
+    justify-content: right;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    border-radius: 1rem;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.button-body {
+    padding-bottom: 1rem;
+    padding-right: 0;
+    padding-left: 2rem;
 }
 .container::before, .container::after {
     content:"";
@@ -4945,10 +5160,10 @@ table#services tbody td:first-child,  table.sticky-table tbody td:first-child{
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #fff;
+    /* background-color: #fff; */
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,.12);
-    border-radius: 0.125rem;
+    border-radius: 1rem;
 }
 .card {
     font-size: .875rem;
