@@ -1,0 +1,44 @@
+<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="25" height="25" fill="#1E1E1E"/>
+<g id="Mock 2" clip-path="url(#clip0_1_92)">
+<rect width="1728" height="4625" transform="translate(-222 -1166)" fill="white"/>
+<g id="Frame 2">
+<g id="Frame 12">
+<g id="card-sm" filter="url(#filter0_d_1_92)">
+<rect x="-23.5" y="-690" width="425" height="917" rx="20" fill="#EFF6FE"/>
+<g id="Body">
+<g clip-path="url(#clip1_1_92)">
+<g id="Feature" clip-path="url(#clip2_1_92)">
+<g id="ic:round-check">
+<path id="Vector" d="M9.50002 16.67L6.03002 13.2C5.84305 13.013 5.58945 12.908 5.32502 12.908C5.0606 12.908 4.807 13.013 4.62002 13.2C4.43305 13.387 4.328 13.6406 4.328 13.905C4.328 14.0359 4.35379 14.1656 4.4039 14.2865C4.454 14.4075 4.52744 14.5174 4.62002 14.61L8.80002 18.79C9.19002 19.18 9.82002 19.18 10.21 18.79L20.79 8.20999C20.977 8.02301 21.082 7.76941 21.082 7.50499C21.082 7.24056 20.977 6.98696 20.79 6.79999C20.603 6.61301 20.3494 6.50797 20.085 6.50797C19.8206 6.50797 19.567 6.61301 19.38 6.79999L9.50002 16.67Z" fill="black"/>
+</g>
+</g>
+</g>
+<path d="M377.5 125H0.5V127H377.5V125Z" fill="#DAE1EA" mask="url(#path-2-inside-1_1_92)"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_1_92" x="-27.5" y="-690" width="433" height="925" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_92"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_92" result="shape"/>
+</filter>
+<clipPath id="clip0_1_92">
+<rect width="1728" height="4625" fill="white" transform="translate(-222 -1166)"/>
+</clipPath>
+<clipPath id="clip1_1_92">
+<path d="M0.5 -222H377.5V126H0.5V-222Z" fill="white"/>
+</clipPath>
+<clipPath id="clip2_1_92">
+<rect width="141" height="39" fill="white" transform="translate(0.5 -7)"/>
+</clipPath>
+</defs>
+</svg>

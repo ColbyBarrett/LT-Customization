@@ -1264,6 +1264,7 @@ div {
 
   .card-body .white li {
     color: #FFF;
+    list-style-image: ;
   }
 
   .btn-primary {
@@ -1339,6 +1340,29 @@ div #scalebill {
     font-weight: 400;
     line-height: 12px; /* 109.091% */
 }
+
+.check-list {
+    /* list-style-image: url("../ic_round-check.svg") !important; */
+    list-style: none !important;
+}
+
+.white {
+    /* list-style-image: url("../ic_round-check_dark.svg") !important; */
+    list-style: none !important;
+}
+
+table caption {
+    caption-side: top;
+}
+
+
+/* ul {
+    list-style: none;
+}
+
+ul li:before {
+    content: '✓'
+} */
 
 .button-body {
     border-top:  1px solid #DAE1EA !important;
