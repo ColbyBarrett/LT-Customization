@@ -549,9 +549,9 @@ a.toggle-menu{
   <!-- Content -->
 
       
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="card starter col-sm" style="display: flex;">
+    <div id="landscape" class="container-fluid">
+        <div  class="row justify-content-center">           
+                <div class="card starter" style="display: flex;">
                 <div class="card-header" id="starter">
                     <div class="h5">Starter</div>
                     <div class="h6 start-price" style="float: left;">$488 <div id="bill">*billed monthly</div></div>
@@ -586,11 +586,11 @@ a.toggle-menu{
                     <button type="button" class="btn btn-primary btn-sm offset-7">Start Now</button>   
                 </div>
             </div>
-                <div class="card scale col-sm" id="scale" style="display: flex;">
-                    <div class="col align-self-center" id="Popular">Most Popular</div>
+            <div class="card scale" id="scale" style="display: flex;">
+                    <div class="col badge-pill badge-primary" id="Popular" style="display: flex;">Most Popular</div>
                 <div class="card-header scale-header" id="starter">
                     <div class="h5 scale">Scale</div>
-                    <div class="h6 start-price" id="scaleprice" style="float: left;">$848 <div id="scalebill">*billed monthly</div></div>
+                    <div class="h6 start-price" id="leadscale" style="float: left;">$848 <div id="scalebill">*billed monthly</div></div>
                 </div>
                 <div class="card-body col" style="padding: 0;">
                     <ul class="white check-list">
@@ -622,8 +622,8 @@ a.toggle-menu{
                 <div class="card-body button-body">
                     <button type="button" class="btn btn-secondary btn-sm offset-7">Start Now</button>   
                 </div>
-            </div> 
-            <div class="card starter col-sm" style="height: 35vh;">
+            </div>
+                <div class="card starter " style="height: 35vh;">
                 <div class="card-header justify-content-center" id="starter">
                     <div class="h5">Custom</div>
                 </div>
@@ -637,21 +637,112 @@ a.toggle-menu{
                 <div class="card-body button-body">
                     <button type="button" class="btn btn-primary btn-sm offset-7">Start Now</button>   
                 </div>
-            </div>
-  
+            </div>   
+        </div>
+        <div id="portrait" class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="card starter col" style="display: flex;">
+                    <div class="card-header" id="starter">
+                        <div class="h5">Starter</div>
+                        <div class="h6 start-price" style="float: left;">$488 <div id="bill">*billed monthly</div></div>
+                    </div>
+                    <div class="card-body col" style="padding: 0;">
+                        <ul class="check-list">
+                            <li><img src="./ic_round-check.svg" alt="">100,000 Clicks/Month</li>
+                            <li><img src="./ic_round-check.svg" alt="">Tracking</li>
+                            <li><img src="./ic_round-check.svg" alt="">Reporting</li>
+                            <li><img src="./ic_round-check.svg" alt="">Campaign Management</li>
+                            <li><img src="./ic_round-check.svg" alt="">Partner Management</li>
+                            <li><img src="./ic_round-check.svg" alt="">Standard Fraud Protection</li>
+                        </ul>    
+                    </div>
+                    <div class="card-header">
+                        <div class="h6" id="addlead">Add Lead Gen</div>
+                        <div class="h7 start-price" id="leadstart" style="float: left;">+$550 <div id="bill">*billed monthly</div></div>  
+                    </div>
+                    <div class="card-body col" style="padding: 0;">
+                        <ul class="check-list">
+                            <li><img src="./ic_round-check.svg" alt="">250,000 Clicks/Month</li>
+                            <li><img src="./ic_round-check.svg" alt="">25,000 leads</li>
+                            <li><img src="./ic_round-check.svg" alt="">500,000 Pings</li>
+                            <li><img src="./ic_round-check.svg" alt="">Marketplace Access</li>
+                            <li><img src="./ic_round-check.svg" alt="">Lead Management</li>
+                            <li><img src="./ic_round-check.svg" alt="">Smart Routing</li>
+                            <li><img src="./ic_round-check.svg" alt="">Compliance</li>
+                            <li><img src="./ic_round-check.svg" alt="">Ping Post</li>
+                        </ul>    
+                    </div>
+                    <div class="card-body button-body">
+                        <button type="button" class="btn btn-primary btn-sm offset-7">Start Now</button>   
+                    </div>
+                </div>
+                <div class="w-100"></div>
+                    <div class="card scale col-sm" id="scale" style="display: flex;">
+                        <div class="col badge-pill badge-primary" id="Popular" style="display: flex;">Most Popular</div>
+                    <div class="card-header scale-header" id="starter">
+                        <div class="h5 scale">Scale</div>
+                        <div class="h6 start-price" id="scaleprice" style="float: left;">$848 <div id="scalebill">*billed monthly</div></div>
+                    </div>
+                    <div class="card-body col" style="padding: 0;">
+                        <ul class="white check-list">
+                            <li><img src="./ic_round-check_dark.svg" alt="">500,000 Clicks/Month</li>
+                            <li><img src="./ic_round-check_dark.svg" alt="">All Standard Starter Services</li>
+                            <li><img src="./ic_round-check_dark.svg" alt="">Advanced tracking</li>
+                            <li><img src="./ic_round-check_dark.svg" alt="">Custom Reporting</li>
+                            <li><img src="./ic_round-check_dark.svg" alt="">Campaign & Ad Management</li>
+                            <li><img src="./ic_round-check_dark.svg" alt="">Enhanced Fraud protections with IPQS</li>
+                            <li><img src="./ic_round-check_dark.svg" alt="">White Labeling & Customizations</li>
+                            <li><img src="./ic_round-check_dark.svg" alt="">API Access</li>
+                        </ul>    
+                    </div>
+                    <div class="card-header scale-header">
+                        <div class="h6" id="scaleaddlead">Add Lead Gen</div>
+                        <div class="h7 start-price" id="leadscale" style="float: left;">+$550 <div id="scalebill">*billed monthly</div></div>  
+                    </div>
+                    <div class="card-body col" style="padding: 0;">
+                        <ul class="white check-list">
+                            <li><img src="./ic_round-check_dark.svg" alt="">500,000 Clicks/Month</li>
+                            <li><img src="./ic_round-check_dark.svg" alt="">100,000 leads</li>
+                            <li><img src="./ic_round-check_dark.svg" alt="">1,000,000 Pings</li>
+                            <li><img src="./ic_round-check_dark.svg" alt="">All Lead Gen Starter Services</li>
+                            <li><img src="./ic_round-check_dark.svg" alt="">All Standard Scale Services</li>
+                            <li><img src="./ic_round-check_dark.svg" alt="">Ping Tree</li>
+                            <li><img src="./ic_round-check_dark.svg" alt="">Pipeline Tracking</li>
+                        </ul>    
+                    </div>
+                    <div class="card-body button-body">
+                        <button type="button" class="btn-secondary btn-sm offset-7">Start Now</button>   
+                    </div>
+                </div>
+                <div class="w-100"></div> 
+                <div class="card starter col-sm" style="height: 35vh;">
+                    <div class="card-header justify-content-center" id="starter">
+                        <div class="h5">Custom</div>
+                    </div>
+                    <div class="card-body col" style="padding: 0;">
+                        <ul class="check-list">
+                            <li><img src="./ic_round-check.svg" alt="">Custom Clicks</li>
+                            <li><img src="./ic_round-check.svg" alt="">Custom Tracking and Attribution Features</li>
+                            <li><img src="./ic_round-check.svg" alt="">Custom Lead Gen Features</li>
+                        </ul>    
+                    </div>
+                    <div class="card-body button-body">
+                        <button type="button" class="btn btn-primary btn-sm offset-7">Start Now</button>   
+                    </div>
+        </div>  </div>
     </div>
-    <div class="flex container">
-        <div class="row justify-content-left offset-5">
+</div>
+    <div class="flex container justify-content-center">
+        <div class="row justify-content-center">
             <div id="caption">Compare Plans</div>
         </div>
-        <div class="row justify-content-center offset-2">
-            <span id="tablebadge" class="badge badge-pill badge-primary flex container col-6">
-                <span class="col">Starter</span>
-                <span class="col">Scale</span>
-            </span>
+        <div class="row justify-content-center" id="starterscale">
+            <div id="tablebadge" class="badge badge-pill badge-primary flex container col-6">
+                <div class="col" id="starterbadge">Starter</div>
+                <div class="col">Scale</div>
+            </div>
         </div>
-        <div class="flex container"></div>
-            <div class="row justify-content-center col-12 offset-1">
+            <div class="row justify-content-center" style="align-self: flex-end;">
             <table id="services" class="show-annual">
         
         <tbody>
@@ -1281,7 +1372,6 @@ a.toggle-menu{
                       
 			
 			<tr class="hide no-border">
-			<td class="hide no-border">&nbsp;</td>
 			<td class="hide no-border">&nbsp;</td>
 			<td class="hide no-border">&nbsp;</td>
 			<td class="hide no-border">&nbsp;</td>

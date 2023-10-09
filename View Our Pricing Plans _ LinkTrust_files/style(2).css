@@ -1185,12 +1185,24 @@ div {
 .row .scale {
     background: #111627;
     border: none;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     padding: 1rem 1rem;
     padding-bottom: .5rem;
     width: 22vw;
 }
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .row .scale {
+    width: 30vw;
+  }
+
+  .row .starter {
+    width: 30vw;
+  }
+    
+  }
 
 .card .scale-header {
     background: #111627;
@@ -1235,8 +1247,10 @@ div {
   }
 
   .card-header .start-price {
+    align-self: end;
     margin-bottom: 0;
-    padding-left: 0;
+    padding-left: 0 !important;
+    padding-right: 0;
     padding-top: .2rem;
     color: #000;
     text-align: center;
@@ -1264,38 +1278,37 @@ div {
 
   .card-body .white li {
     color: #FFF;
-    list-style-image: ;
   }
 
   .btn-primary {
+    align-self: end;
     background-color: #111627;
     border:none;
+    white-space: nowrap;
   }
 
   .btn-secondary {
+    align-self: end;
     background-color: #FFF;
     color: #000 !important;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    white-space: nowrap;
   }
 
   .card #Popular {
-    color: #FFF;
-    text-align: center;
-    display: flex;
-    height: 28px;
-    padding: 0px 8px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
     border: 1px solid #FFF;
+    background: #111627;
+    align-self: center;
+    justify-content: center;
+    /* text-align: center; */
     font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 38px; /* 316.667% */
-  }
+    display: flex;
+    width: 100px;
+    white-space: nowrap;
+  } 
 
   .card-header #addlead {
     margin-bottom: 0;
@@ -1330,6 +1343,7 @@ div #bill {
     font-style: normal;
     font-weight: 400;
     line-height: 12px; /* 109.091% */
+    white-space: nowrap;
 }
 
 div #scalebill {
@@ -1339,6 +1353,7 @@ div #scalebill {
     font-style: normal;
     font-weight: 400;
     line-height: 12px; /* 109.091% */
+    white-space: nowrap;
 }
 
 .check-list {
@@ -1379,7 +1394,14 @@ div #scalebill {
     font-weight: 400;
     line-height: 24px; /* 75% */
     background-color: #111627;
+    margin-right: 4vw;
+    margin-left: 5vw;
 }
+
+/* #tablebadge > div {
+    padding: 0;
+    padding-left: 2vw;
+} */
 
 
 /* ul {
@@ -1955,7 +1977,8 @@ td {
 table th,
 table td {
     word-break: normal;
-    min-width: 10em;
+    /* min-width: 10em; */
+    width: 25%;
     vertical-align: middle;
     padding: .6em .6em;
     border-color: transparent;
@@ -1971,6 +1994,10 @@ table td h3 {
 table td h6 {
 
     margin-bottom: 0;
+}
+
+table >tr:first-child {
+    width: 50%;
 }
 .table-key {
     background-color: #ffffff;
@@ -4983,6 +5010,11 @@ table#services tbody td:first-child,  table.sticky-table tbody td:first-child{
     width: 25%;
 } 
 
+.row#starterscale {
+    padding-bottom: 0;
+    width: 100vw;
+}
+
 .sticky-table a.am-button-1 {
     background-color: var(--dark-grey);
     color: #ffffff !important;
@@ -4995,16 +5027,17 @@ table#services tbody td:first-child,  table.sticky-table tbody td:first-child{
 	border-radius: 25px;
 }
 
-#services {
+table#services {
 	margin: auto;
 	border-collapse: collapse;
 	overflow-x: auto;
 	display: block;
-	width: 100vw;
+	width: 70%;
 	max-width: 100%;
 	overflow-y:hidden;
 	max-width: 1000px;
 }
+
 #services tr>th:first-child,
 #services tr>td:first-child {
 	/*position: sticky;
@@ -5017,6 +5050,7 @@ table#services tbody td:first-child,  table.sticky-table tbody td:first-child{
     text-align: center;
     border: none;
     border-bottom: 1px solid #D1D6DE;
+    /* width: 20% */
 }
 
 #services th.hide.no-border ,
@@ -5180,6 +5214,41 @@ table#services tbody td:first-child,  table.sticky-table tbody td:first-child{
     font-size: .875rem;
     font-weight: 400;
 }
+
+@media (orientation: landscape) {
+    #landscape .row {
+        display: flex !important;
+    }
+    #portrait {
+        display: none;
+    }
+    /* #tablebadge {
+        margin-left: 19vw;
+    } */
+
+} 
+
+@media (orientation: portrait) {
+
+    #landscape .row {
+        display: none !important;
+    }
+
+    #portrait .row{
+        display: flex !important;
+    }
+    table#services {
+        width: 100%
+    }
+    #tablebadge {
+        margin-left: 11vw;
+    }
+    #tablebadge #starterbadge {
+        padding-right: 7vw;
+    }
+
+}
+
 .blue {
     color: var(--primary-color);
 }
