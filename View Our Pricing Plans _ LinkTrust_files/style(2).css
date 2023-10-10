@@ -1336,6 +1336,10 @@ div {
     align-self: stretch;
 }
 
+.card.scale {
+    margin-top: 0;
+}
+
 div #bill {
     color: #000;
     text-align: left;
@@ -1344,6 +1348,7 @@ div #bill {
     font-weight: 400;
     line-height: 12px; /* 109.091% */
     white-space: nowrap;
+    padding: 0;
 }
 
 div #scalebill {
@@ -1354,6 +1359,7 @@ div #scalebill {
     font-weight: 400;
     line-height: 12px; /* 109.091% */
     white-space: nowrap;
+    padding: 0;
 }
 
 .check-list {
@@ -5007,8 +5013,12 @@ span.price {
 
 
 table#services tbody td:first-child,  table.sticky-table tbody td:first-child{
+    width: 50%;
+}
+
+table#services tbody tr td {
     width: 25%;
-} 
+}
 
 .row#starterscale {
     padding-bottom: 0;
@@ -5075,6 +5085,7 @@ table#services {
     border: none !important;
     border-bottom: 1px solid #D1D6DE !important;
     background-color: #fff!important;
+    width: 100% !important
 }
 
 #services .table-subtitle h3 {
