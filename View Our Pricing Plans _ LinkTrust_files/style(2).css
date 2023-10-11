@@ -1324,6 +1324,7 @@ div {
   }
 
   .card-header #scaleaddlead {
+    text-align: left;
     color: #FFF;
   }
 .card-body {
@@ -1396,12 +1397,11 @@ div #scalebill {
     caption-side: top;
     text-align: center;
     font-size: 20px;
+    width: 35vw;
     font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 75% */
     background-color: #111627;
-    margin-right: 4vw;
-    margin-left: 5vw;
 }
 
 /* #tablebadge > div {
@@ -5013,16 +5013,18 @@ span.price {
 
 
 table#services tbody td:first-child,  table.sticky-table tbody td:first-child{
-    width: 50%;
+    width: 35vw;
 }
 
 table#services tbody tr td {
-    width: 25%;
+    width: 17.5vw;
 }
 
 .row#starterscale {
     padding-bottom: 0;
-    width: 100vw;
+    width: 70vw;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .sticky-table a.am-button-1 {
@@ -5042,7 +5044,7 @@ table#services {
 	border-collapse: collapse;
 	overflow-x: auto;
 	display: block;
-	width: 70%;
+	width: 70vw;
 	max-width: 100%;
 	overflow-y:hidden;
 	max-width: 1000px;
@@ -5085,11 +5087,15 @@ table#services {
     border: none !important;
     border-bottom: 1px solid #D1D6DE !important;
     background-color: #fff!important;
-    width: 100% !important
+    width: 70vw !important
 }
 
 #services .table-subtitle h3 {
     color: #FC970F !important;
+}
+
+.row#tablecontain {
+    width: 70vw;
 }
 
 .sticky-table .table-subtitle {
@@ -5249,13 +5255,39 @@ table#services {
         display: flex !important;
     }
     table#services {
-        width: 100%
+        width: 90vw;
     }
+
+    .row#starterscale {
+        width: 90vw;
+    }
+
+    .row#tablecontain {
+        width: 90vw;
+    }
+
+    #services .table-subtitle {
+        width: 90vw !important;
+    }
+
+    table#services tbody td:first-child {
+        width: 45vw;
+    }
+
+    table#services tbody tr td {
+        width: 22.5vw;
+    }
+
     #tablebadge {
-        margin-left: 11vw;
+        font-size: 15px;
     }
-    #tablebadge #starterbadge {
-        padding-right: 7vw;
+
+    .col#starterbadge {
+        padding-left: 10px;
+    }
+
+    .container .row {
+        padding: 1rem 0;
     }
 
 }
