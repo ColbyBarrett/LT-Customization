@@ -612,6 +612,7 @@ ol.breadcrumbs li:last-of-type a:after {
     .badges{
         display: none !important;
     }
+    }
 
     .primary-header .container{
         padding-top: 5px !important;
@@ -633,7 +634,7 @@ ol.breadcrumbs li:last-of-type a:after {
     .hero,
     div.hero.section-what-we-do,
     .hero-volunteer{
-        min-height: 80vh !important;
+        /* min-height: 80vh !important; */
         padding-top: 80px !important;
         padding-bottom: 20px !important;
     }
@@ -890,6 +891,9 @@ li.item-contact a, li.item-contact a:hover {
         display: block;
     }
     li.item-contact{
+        display: none !important;
+    }
+    .try {
         display: none !important;
     }
 }
@@ -1254,7 +1258,7 @@ div {
     padding-top: .2rem;
     color: #000;
     text-align: center;
-    font-size: 28px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 400;
     line-height: 28px; /* 100% */
@@ -1273,6 +1277,7 @@ div {
   } 
 
   .card-header #scaleprice{
+    font-size: 32px;
     color:#FFF;
   }
 
@@ -1343,7 +1348,7 @@ div {
 
 div #bill {
     color: #000;
-    text-align: left;
+    text-align: center;
     font-size: 11px;
     font-style: normal;
     font-weight: 400;
@@ -1356,6 +1361,17 @@ div #scalebill {
     color: #FFF;
     text-align: left;
     font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px; /* 109.091% */
+    white-space: nowrap;
+    padding: 0;
+}
+
+div #compbill {
+    color: #000;
+    text-align: center;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 12px; /* 109.091% */
@@ -1385,10 +1401,10 @@ div #scalebill {
     caption-side: top;
     color: #0D9DDB;
     text-align: center;
-    font-size: 32px;
+    font-size: 38px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 75% */
+    line-height: 30px; /* 75% */
     }
 
 #tablebadge {
@@ -1402,6 +1418,15 @@ div #scalebill {
     font-weight: 400;
     line-height: 24px; /* 75% */
     background-color: #111627;
+}
+
+.tablecheck {
+    font-size: 18px;
+    padding-right: 0.7rem;
+}
+
+.fa-solid.fa-check.blue {
+    font-size: 20px;
 }
 
 /* #tablebadge > div {
@@ -1438,8 +1463,7 @@ ul li:before {
 
 .btn-sm{
     justify-content: right;
-    padding-top: .2rem;
-    padding-bottom: .2rem;
+    padding: 7px 16px;
     border-radius: 1rem;
     color: #FFF;
     text-align: center;
@@ -1448,6 +1472,7 @@ ul li:before {
     font-weight: 400;
     line-height: normal;
 }
+
 
 .button-body {
     padding-bottom: 1rem;
@@ -4994,22 +5019,6 @@ span.price {
     border-bottom: 1px solid #00adef;
     border-radius: 25px;
 }
-/* .non-sticky {
-	margin: auto;
-	border-collapse: collapse;
-	overflow-x: auto;
-	/* display: block; */
-	/* width: 94%; */
-    /* border-width: 2px; */
-	/* max-width: 100%; */
-	/* overflow-y:hidden; */
-	/* max-width: 1000px; */
-    /* position: fixed;
-    top: 100px;
-    width: 74vw; 
-    margin-left: 53px;
-    z-index: 3; 
-}*/
 
 
 table#services tbody td:first-child,  table.sticky-table tbody td:first-child{
@@ -5027,17 +5036,6 @@ table#services tbody tr td {
     justify-content: flex-end;
 }
 
-.sticky-table a.am-button-1 {
-    background-color: var(--dark-grey);
-    color: #ffffff !important;
-    text-decoration: none !important;
-    display: inline-block;
-    margin: 18px 0px;
-    padding: 12px 41px;
-    border: none;
-    font-size: 15px;
-	border-radius: 25px;
-}
 
 table#services {
 	margin: auto;
@@ -5098,15 +5096,7 @@ table#services {
     width: 70vw;
 }
 
-.sticky-table .table-subtitle {
-    background: var(--light-grey)!important;
-    border-left: var(--light-grey);
-}
 
-.non-sticky .table-subtitle {
-        background: var(--light-grey)!important;
-    border-left: var(--light-grey);
-}
 
 #services r:nth-child(even) {
     background: #fafafa!important;
@@ -5286,10 +5276,22 @@ table#services {
         padding-left: 10px;
     }
 
-    .container .row {
-        padding: 1rem 0;
+    .card-header div {
+        padding-left: 0;
     }
 
+    /* .container-fluid#portrait {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    } */
+    .container-fluid, .container-lg, .container-md, .container-sm, .container-x {
+        padding-right: 0 !important;
+        padding-left: 0 !important
+    }
+}
+
+.black {
+    color: black;
 }
 
 .blue {
@@ -5936,7 +5938,7 @@ div.hero-financials .susbcribe-form-content input[type="email"] {
 
 @media only screen and (min-width: 1801px) {
     .hero{
-        height: 800px !important;
+        height: 500px !important;
     }
 
 }
